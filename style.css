@@ -5,6 +5,17 @@ body {
 }
 
 
+/* Navbar */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+
 /* Hero */
 
 .hero {
@@ -13,55 +24,80 @@ body {
 }
 
 .hero h1 {
-    font-size: 45px;
+    font-size: 48px;
     font-weight: bold;
 }
 
 .hero p {
     font-size: 20px;
+    margin: 20px 0 30px;
+}
+
+
+/* Search */
+
+.search-section {
+    margin-top: 40px;
+}
+
+.search-section input {
+    height: 50px;
 }
 
 
 /* Categories */
 
-.category {
+.category-box {
+    background: white;
     padding: 25px;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.category h5 {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-
-/* Product */
-
-.card {
-    border: none;
     border-radius: 12px;
+    transition: 0.3s;
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* Products */
+
+.product-card {
+    border: none;
+    border-radius: 15px;
     overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
 }
 
 .product-image {
-    height: 220px;
+    height: 250px;
+    background-color: #eeeeee;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 90px;
-    background-color: #eeeeee;
-}
 
-.card-body {
-    padding: 20px;
+    font-size: 100px;
 }
 
 
 /* Footer */
 
 footer {
-    margin-top: 50px;
+    background-color: #212529;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 60px;
 }
